@@ -92,8 +92,6 @@ def load_csvs_to_dataframes(bucket_name: str, prefix: str = ""):
         df = pd.read_csv(BytesIO(data))
         key = file_name.split("/")[-1] 
         dataframes[key] = df
-        st.success(f"✅ Loaded: {key} → {df.shape}")
-    
     return dataframes
 
 
@@ -3674,3 +3672,4 @@ if select =="Business Cases":
         
 if select == "Map":
     map()
+
