@@ -1,6 +1,6 @@
 # 📊 PhonePe Transaction Insights Project
 
-The **PhonePe Transaction Insights Project** is a data analytics and visualization platform that explores India's digital payment trends using the [PhonePe Pulse dataset](https://www.phonepe.com/pulse/). It extracts, transforms, and visualizes transaction data by **state**, **year**, and **quarter**, offering insights into the growth of India's digital economy.
+The **PhonePe Transaction Insights Project** is a data analytics and visualization platform that explores India's digital payment trends using the [PhonePe Pulse dataset](https://github.com/PhonePe/pulse). It extracts, transforms, and visualizes transaction data by **state**, **year**, and **quarter**, offering insights into the growth of India's digital economy.
 
 Built with **Python**, **Google Cloud Storage**, **Pandas**, and **Streamlit**, the project provides an interactive dashboard hosted on Streamlit Cloud.
 
@@ -67,7 +67,8 @@ streamlit run src/Dashboard.py
 
 🌐 Deployment
 The dashboard is deployed on Streamlit Cloud
-https://phonepe-sagi.streamlit.app
+[Dashboard link:](https://www.phonepe.com/pulse/](https://phonepe-sagi.streamlit.app))
+
 
 📈 Sample Insights
 
