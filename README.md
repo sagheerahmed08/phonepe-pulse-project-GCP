@@ -67,7 +67,7 @@ streamlit run src/Dashboard.py
 
 🌐 Deployment
 The dashboard is deployed on Streamlit Cloud
-[Dashboard link:](https://www.phonepe.com/pulse/](https://phonepe-sagi.streamlit.app))
+[Dashboard link:](https://phonepe-sagi.streamlit.app)
 
 
 📈 Sample Insights
