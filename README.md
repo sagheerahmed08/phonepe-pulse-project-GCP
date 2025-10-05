@@ -71,6 +71,6 @@ https://phonepe-sagi.streamlit.app
 
 📈 Sample Insights
 
-Maharashtra, Karnataka, and Tamil Nadu lead in transaction volume.
-Major growth observed in digital payments post-2020.
-Smaller cities and rural areas show rising digital adoption.
+- Maharashtra, Karnataka, and Tamil Nadu lead in transaction volume.
+- Major growth observed in digital payments post-2020.
+- Smaller cities and rural areas show rising digital adoption.
