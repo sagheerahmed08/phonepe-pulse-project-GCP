@@ -3274,7 +3274,7 @@ st.markdown("""
             width: 340px;
         }
         [data-testid="stSidebar"][aria-expanded="false"] {
-            width: 340px;
+            width: 540px;
             margin-left: -340px;
         }
 
@@ -3704,5 +3704,6 @@ if select =="Business Cases":
         
 if select == "Map":
     map()
+
 
 
