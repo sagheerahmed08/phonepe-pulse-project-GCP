@@ -113,7 +113,7 @@ Aggre_transaction = pd.DataFrame(df2,columns = ("States", "Years", "Quarter", "T
 print(Aggre_transaction)
 
 df3 = dataframes["agg_user.csv"]
-Aggre_user = pd.DataFrame(df3,columns = ("States", "Years", "Quarter","Brand", "Transaction_count", "Transaction_Percentage"))
+Aggre_user = pd.DataFrame(df3, columns=("States", "Years", "Quarter", "Brand", "Transaction_count", "Transaction_percentage"))
 print(Aggre_user)
 
 df4 = dataframes["map_insurance.csv"]
