@@ -1258,18 +1258,9 @@ def ques2(Aggre_user, Map_user):
     state_filter["Engagement_Score"] = (
         state_filter["Transaction_count"] * state_filter["Transaction_Percentage"]
     )
-    if not brand_state.empty:
-        idx = brand_state.groupby("States")["Engagement_Score"].idxmax()
-        idx = idx.dropna()
-        if not idx.empty:
-            best_brand = brand_state.loc[idx].reset_index(drop=True)
-        else:
-            st.warning("⚠️ No data for best brand in the selected year/quarter.")
-            best_brand = pd.DataFrame()
-    else:
-        st.warning("⚠️ No data available after filtering.")
-        best_brand = pd.DataFrame()
-
+    best_brand = brand_state.loc[
+    brand_state.groupby("States")["Engagement_Score"].idxmax()
+    ].reset_index(drop=True)
     st.write("Engagement score = Transaction_count * Transaction_Percentage")
     url = "https://gist.githubusercontent.com/jbrobst/56c13bbbf9d97d187fea01ca62ea5112/raw/e388c4cae20aa53cb5090210a42ebb9b765c0a36/india_states.geojson"
     geo_data = json.loads(requests.get(url).content)
@@ -3712,6 +3703,7 @@ if select =="Business Cases":
         
 if select == "Map":
     map()
+
 
 
 
