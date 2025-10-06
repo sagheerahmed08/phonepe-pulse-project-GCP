@@ -3348,7 +3348,7 @@ if select == "Home":
     pincode_choice = st.sidebar.selectbox(
         "Select Pincode:", pincodes, key="pincode_choice", disabled=(state_choice == "All")
     )
-
+    st.DataFrame(Aggre_user)
     def get_filtered_data(state, district, pincode):
         if state == "All" and district == "All" and pincode == "All":
             return Aggre_insurance, Aggre_transaction, Map_user
@@ -3703,6 +3703,7 @@ if select =="Business Cases":
         
 if select == "Map":
     map()
+
 
 
 
