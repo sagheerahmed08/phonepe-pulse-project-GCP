@@ -114,7 +114,8 @@ print(Aggre_transaction)
 
 df3 = dataframes["agg_user.csv"]
 Aggre_user = pd.DataFrame(df3, columns=("States", "Years", "Quarter", "Brand", "Transaction_count", "Transaction_Percentage"))
-print(Aggre_user)
+Aggre_user["Transaction_count"] = pd.to_numeric(Aggre_user["Transaction_count"], errors="coerce").fillna(0)
+Aggre_user["Transaction_Percentage"] = pd.to_numeric(Aggre_user["Transaction_Percentage"], errors="coerce").fillna(0)
 
 df4 = dataframes["map_insurance.csv"]
 Map_insurance = pd.DataFrame(df4,columns = ("States", "Years", "Quarter", "District", "Transaction_count","Transaction_amount"))
@@ -3704,6 +3705,7 @@ if select =="Business Cases":
         
 if select == "Map":
     map()
+
 
 
 
