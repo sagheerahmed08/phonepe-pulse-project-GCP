@@ -3310,7 +3310,6 @@ with st.sidebar:
         "Main Menu",
         ["Home", "Data Exploration", "Business Cases", "Map"],
         icons=["house", "bar-chart", "pie-chart", "map"],
-        menu_icon="menu-app",
         default_index=0
     )
     
@@ -3704,6 +3703,7 @@ if select =="Business Cases":
         
 if select == "Map":
     map()
+
 
 
 
